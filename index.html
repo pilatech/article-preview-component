@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
   
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | Article preview component</title>
@@ -12,27 +16,33 @@
 </head>
 <body>
  <article class="article">
-  <img src="images/drawers.jpg" alt="chest of drawers" class="article__thumbnail">
-  <h2 class="article__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
-  <p class="article__exerpt">
-   Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
-  </p>
+  <header class="article__hero">
+   <img src="images/drawers.jpg" alt="chest of drawers" class="article__thumbnail">
+  </header>
+  <section class="article__content">
+      <h2 class="article__title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h2>
+     <p class="article__exerpt">
+      Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.
+     </p>
+  </section>
   <footer class="article__meta">
-    <section class="article__author">
-     <img src="images/avatar-michelle.jpg" alt="Michelle Appleton" class="article__avatar">
-     <h2 class="article__author-title">
-      Michelle Appleton
-      <small class="article__date">28 June 2020</small>
-     </h2>
-    </section>
-    <button class="btn"><img src="images/icon-share.svg" alt="share icon" class="btn__icon"></button>
-    <i class="widget">
-     Share
-     <img src="images/icon-facebook.svg" alt="facebook" class="widget__social-icon">
-     <img src="images/icon-twitter.svg" alt="twitter" class="widget__social-icon">
-     <img src="images/icon-pinterest.svg" alt="pintrest" class="widget__social-icon">
-    </i>
-  </footer>
+   <section class="article__author">
+    <img src="images/avatar-michelle.jpg" alt="Michelle Appleton" class="article__avatar">
+    <h2 class="article__author-title">
+     Michelle Appleton
+     <small class="article__date">28 June 2020</small>
+    </h2>
+   </section>
+   <button class="btn" id="activate-share"><img src="images/icon-share.svg" alt="share icon" class="btn__icon"></button>
+   <i class="widget" id="share-widget">
+    Share
+    <img src="images/icon-facebook.svg" alt="facebook" class="widget__social-icon">
+    <img src="images/icon-twitter.svg" alt="twitter" class="widget__social-icon">
+    <img src="images/icon-pinterest.svg" alt="pintrest" class="widget__social-icon">
+    <button class="btn btn--share"><img src="images/icon-share.svg" alt="share icon" class="btn__icon btn__icon--share" id="deactivate-share"></button>
+   </i>
+ </footer>
  </article>
+ <script src="script.js"></script>
 </body>
 </html>
